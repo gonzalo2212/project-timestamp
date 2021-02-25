@@ -28,6 +28,10 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
+// timestamp endopoints
+app.get("/api/timestamp/:time", function(req, res) {
+  res.json({test: req.params.time});
+});
 
 
 // listen for requests :)
